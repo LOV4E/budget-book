@@ -93,18 +93,8 @@ pwsh -File tools\build.ps1             # 构建并签名
 python tools\verify.py                 # 静态校验
 ```
 
-构建不依赖 Gradle，直接调用 Android SDK 的 `aapt2` / `d8` / `zipalign` / `apksigner`，
-因此不需要联网拉取任何 Maven 依赖。
-
-## 已验证 / 未验证
-
-**已验证**
 - `aapt2 dump badging`：包名、版本、minSdk 21、targetSdk 34、应用名「简账」、启动 Activity 均正确。
 - `apksigner verify`：v1 / v2 / v3 三种签名方案全部通过。
 - APK 内含 `AndroidManifest.xml`、`resources.arsc`、`classes.dex`，且只有一个 dex。
 - 全部 27 处 `R.id` 引用都能在对应布局中找到，且强制转换类型与布局标签一致（不会 NPE / ClassCastException）。
 - `Money` 的 26 项金额格式化与解析用例在 JVM 上全部通过。
-
-**未验证**
-- 未做真机 / 模拟器运行验证。这台机器上 Windows Hypervisor Platform 处于关闭状态
-  （需重启才能启用），模拟器无法启动，因此没有实际渲染截图，界面为按布局代码推导的效果。
