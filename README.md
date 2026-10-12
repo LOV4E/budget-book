@@ -4,6 +4,8 @@
 
 ## 安装包
 
+> **直接下载**：[JianZhang-1.0.apk](https://github.com/LOV4E/budget-book/raw/main/JianZhang-1.0.apk)
+
 | 项 | 值 |
 | --- | --- |
 | 文件 | `JianZhang-1.0.apk` |
