@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/ink</item>
+        <item name="android:colorPrimaryDark">@color/ink</item>
+        <item name="android:colorAccent">@color/ink</item>
+        <item name="android:windowBackground">@color/paper</item>
+        <item name="android:statusBarColor">@color/ink</item>
+        <!-- Kept black on purpose: below API 27 the navigation bar icons are always
+             light, so a white bar would render them invisible. -->
+        <item name="android:navigationBarColor">@color/ink</item>
+        <item name="android:textColorPrimary">@color/ink</item>
+        <item name="android:textColorSecondary">@color/ink_muted</item>
+        <item name="android:textColorHint">@color/ink_faint</item>
+    </style>
+
+    <style name="FieldLabel">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/ink_muted</item>
+        <item name="android:letterSpacing">0.14</item>
+    </style>
+
+    <style name="FieldBox">
+        <item name="android:background">@drawable/bg_field</item>
+        <item name="android:paddingLeft">14dp</item>
+        <item name="android:paddingRight">14dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/ink</item>
+    </style>
+
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">简账</string>
+
+    <string name="month_budget">本月预算</string>
+    <string name="set_action">设置</string>
+    <string name="not_set">未设置</string>
+    <string name="tap_to_set">点击设置本月预算</string>
+    <string name="income">收入</string>
+    <string name="expense">支出</string>
+    <string name="records">明细</string>
+    <string name="add_record">记一笔</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="ok">确定</string>
+    <string name="type">类型</string>
+    <string name="amount">金额</string>
+    <string name="category">分类</string>
+    <string name="note">备注</string>
+    <string name="note_hint">添加备注（可选）</string>
+    <string name="date">日期</string>
+    <string name="empty_title">还没有记录</string>
+    <string name="empty_sub">点击下方按钮，记下第一笔</string>
+    <string name="err_amount">请输入大于 0 的金额</string>
+    <string name="err_budget">请输入正确的预算金额</string>
+    <string name="budget_hint">留空可清除本月预算</string>
+    <string name="confirm_delete">确定删除这条记录？</string>
+    <string name="settings_title">设置预算</string>
+    <string name="uncategorized">未分类</string>
+    <string name="saved">已保存</string>
+
+    <string name="month_fmt">%1$d年%2$d月</string>
+    <string name="budget_dialog_title_fmt">%1$d年%2$d月 预算金额</string>
+    <string name="spent_fmt">已支出 ¥%1$s</string>
+    <string name="remain_fmt">剩余 ¥%1$s</string>
+    <string name="over_fmt">超出 ¥%1$s</string>
+    <string name="count_fmt">%1$d 笔</string>
+
+    <string-array name="cats_expense">
+        <item>餐饮</item>
+        <item>交通</item>
+        <item>购物</item>
+        <item>居住</item>
+        <item>娱乐</item>
+        <item>医疗</item>
+        <item>学习</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="cats_income">
+        <item>工资</item>
+        <item>奖金</item>
+        <item>理财</item>
+        <item>兼职</item>
+        <item>报销</item>
+        <item>红包</item>
+        <item>其他</item>
+    </string-array>
+</resources>

@@ -1,0 +1,32 @@
+# ---------------------------------------------------------------------------
+# Downloaded toolchain. Not part of the project: rebuild it with the scripts in
+# tools/ (setup-toolchain.ps1 + fetch-sdk.ps1). ~1.1 GB.
+# ---------------------------------------------------------------------------
+.toolchain/
+.android-sdk/
+
+# ---------------------------------------------------------------------------
+# Build intermediates (tools/build.ps1 recreates them)
+# ---------------------------------------------------------------------------
+build/
+
+# ---------------------------------------------------------------------------
+# Signing material. tools/build.ps1 regenerates a keystore when one is missing,
+# so never commit a private key.
+# ---------------------------------------------------------------------------
+*.jks
+*.keystore
+*.idsig
+*.p12
+*.pem
+
+# ---------------------------------------------------------------------------
+# Editors / OS noise
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+*.iml
+*.swp
+Thumbs.db
+Desktop.ini
+.DS_Store
